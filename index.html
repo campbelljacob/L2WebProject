@@ -1,23 +1,26 @@
 <!doctype html>
+
 <head>
     <title>Goes in tab</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        setInterval(imgChanger,2000);
-        
+        setInterval(imgChanger, 2000);
+
         // var imgs = ['images/img'] set list and change file path using      array
-        
+
         var i = 0;
-        
-        function imgChanger(){
-            var imagePath = 'images/img' + i + '.jpg'
+
+        function imgChanger() {
+            var imagePath = 'images/img/img' + i + '.jpg'
+            document.getElementById('slideReel').style.transition = "all 2s";
             document.getElementById('slideReel').src = imagePath;
-//            document.getElementById('slideReel').src = imgs[i];
+            //            document.getElementById('slideReel').src = imgs[i];
             i++
-            if(i > 2) {
+            if (i > 2) {
                 i = 0;
             }
         }
+
     </script>
 </head>
 
@@ -25,17 +28,18 @@
     <div class="main">
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Gallery</a>
+            <a href="Events.html">Events</a>
             <a href="index.html">Contact</a>
+            <a href="quiz.html">8-ball</a>
+            
         </nav>
-        
-     <section>
-            <h1>Math teachers have risen up over society declaring war 0n all     illogical beings. Patient zero has infected all other teachers across the world with the intent to run it to ruins. failed experiments have led to patient zero recieving the powers to re-write the laws of physics.</h1>
-         <div class="news">
-            <img id="slideReel" src="images/img.jpg">
-             <p id="info"></p>
-         </div>
 
-    </section>
+        <section>
+            <h1>Math teachers have risen up over society declaring war 0n all illogical beings. Patient zero has infected all other teachers across the world with the intent to run it to ruins. failed experiments have led to patient zero recieving the powers to re-write the laws of physics.</h1>
+            <div class="news">
+                <img id="slideReel" src="images/img/img0.jpg">
+                <p id="info"></p>
+            </div>
+
+        </section>
     </div>
-        

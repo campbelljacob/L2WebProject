@@ -42,6 +42,7 @@ section {
     text-decoration: none;
     font-family: IndieFlower;
     color: white;
+    padding: 10px 0px;
 }
 
 h1 {
@@ -50,4 +51,15 @@ h1 {
 
 section img {
     width: 50%;
+}
+
+.news img {
+    width: 40%;
+    display: block;
+    justify-self: center;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
 }
