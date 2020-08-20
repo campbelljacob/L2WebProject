@@ -47,6 +47,7 @@ section {
 
 h1 {
     margin: 10px 0px;
+    font-size: 30px;
 }
 
 section img {
@@ -62,4 +63,17 @@ section img {
 .news {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+button {
+    width: 60px;
+    height: auto;
+}
+
+p {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 40px;
 }

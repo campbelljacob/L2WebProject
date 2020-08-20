@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <title>Goes in tab</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--    <script href="code.js"></script>-->
+    <script>
+        var options = ['figure out the first 100 digits of pi to stun the teacher long enough to run away', 'yell b2 + c2 = a2 to deal fatal damage to the teacher', 'say im dropping level 3 maths to instantly kill any teacher in your way'];
+
+        function testing() {
+            var rand = Math.floor(Math.random() * options.length);
+            document.getElementById('text').innerHTML = options[rand];
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Events.html">Events</a>
+            <a href="survival.html">Survival</a>
+            <a href="tasksetter.html">TaskSetter</a>
+        </nav>
+        <section>
+
+            <h2>Here you will get tasks that will help you survive on your journey to living</h2>
+            <p>CLICK THE BUTTON TO SEAL YOUR FATE</p>
+
+            <button onclick="testing()">CLICK ME IF YOU DARE</button>
+            <p id="text"></p>
+
+        </section>
+    </div>
